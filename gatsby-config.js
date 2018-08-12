@@ -29,5 +29,5 @@ module.exports = {
     },
     `gatsby-plugin-offline`
   ],
-  pathPrefix: `/project-name`,
+  pathPrefix: `/`,
 }

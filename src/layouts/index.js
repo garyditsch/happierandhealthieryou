@@ -12,8 +12,8 @@ const Layout = ({ children, data, location }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'A Daily Program to Help You Change Behaviors and Uncover Happiness and Health' },
+        { name: 'keywords', content: 'health, happiness, fitness, behavior, mind-set' },
       ]}
       script={[
         { src: "https://use.fontawesome.com/releases/v5.0.7/js/all.js", type: "text/javascript" }
