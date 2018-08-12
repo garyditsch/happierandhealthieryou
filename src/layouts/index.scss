@@ -1,0 +1,57 @@
+
+@media all and (max-width: 768px) {
+    .hero-image {
+        background-image: none !important;
+        background-color: #CAE4DB;
+    }
+    .hero {
+        background-color: #CAE4DB;
+    }
+}
+
+.hero-image {
+    background-image: url("../assets/images/sunset.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #CAE4DB;
+}
+
+.mobile-menu {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+ 
+.mobile-menu a {
+    color: #ffffff;
+}
+
+.blog-content a {
+    text-decoration: underline;
+}
+
+.lesson-content a {
+    text-decoration: underline;
+}
+
+
+$morning: #CAE4DB;
+$honey: #DCAE1D;
+$cerulean: #00303F;
+$mist: #7A9D96;
+
+$primary: $morning;
+$primary-invert: $cerulean;
+$dark: $cerulean;
+$warning: $honey;
+$link: $cerulean;
+
+
+.navbar-brand {
+    .navbar-item {
+        color: $warning;
+    }
+}
+
+$variable-columns: false;
+@import "~bulma/bulma";
