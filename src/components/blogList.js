@@ -20,13 +20,14 @@ const BlogList = ({
             <div className="container">
                 <div className="columns is-multiline">
                     {edges.map((blog, i) =>
-                        <div className="column is-one-quarter" key={i}>
-                            <div className="card has-background-primary" >
-                                <header className="card-header">
+                        <div className="column is-half" key={i}>
+                            <div style={{ height: '100%', backgroundColor: '#f5f5f5', borderLeft: '5px solid #dbdbdb'}}>
+                                <header>
                                     <Link to={blog.node.slug}>
                                         <h1 className="card-header-title">{blog.node.title}</h1>
                                     </Link>
                                 </header>
+                                <div>{blog.node.updatedAt}</div>
                             </div>
                         </div>
                     )}
@@ -36,4 +37,4 @@ const BlogList = ({
         </section>
     )
 
-export default BlogList
+export default BlogList 

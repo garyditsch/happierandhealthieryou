@@ -46,7 +46,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 }
             }`
             ).then((result) => {
-                console.log(result)
+                console.log('the result', result)
                 if (result.errors) {
                     reject(result.errors)
                 }
@@ -64,7 +64,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                         path: edge.node.slug,
                         component: blogTemplate,
                         context: {
-                            slug: edge.node.slug
+                            slug: edge.node.slug,
                         }
                     })
                 });
