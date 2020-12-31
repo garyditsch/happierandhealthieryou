@@ -27,7 +27,6 @@ const BlogList = ({
                                         <h1 className="card-header-title">{blog.node.title}</h1>
                                     </Link>
                                 </header>
-                                <div>{blog.node.updatedAt}</div>
                             </div>
                         </div>
                     )}
